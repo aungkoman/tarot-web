@@ -1,0 +1,76 @@
+#pack_cont{
+margin-left: 10px; 
+padding: 50px 5px 50px;
+}
+
+.card1,.card2{
+    cursor: pointer;
+}
+/*single card*/
+.cardall{
+width: 50px;
+height: 80px;
+border: 0px solid #ddd;
+border-radius: 2px;
+position: absolute;
+background-color:none;
+background-image: url('../card.png');
+background-size: contain;
+background-repeat: no-repeat;
+text-align: center;
+
+
+/*all transition to take 1s */
+transition:all 1s;
+-ms-transition:all 1s;
+-webkit-transition:all 1s;
+-moz-transition:all 1s;
+
+/*set card transform origin to 20% from x-axis and 80% from y-axis */
+transform-origin: 20% 80%;
+-ms-transform-origin: 20% 80%;
+-webikit-transform-origin: 20% 80%;
+-moz-transform-origin: 20% 80%;
+
+/*make card non selectable*/
+-webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
+
+
+.card1:hover{
+    transform: translateY(-10%);
+    transition:all 0.1s !important;
+}
+
+.card2.move{
+    transform: translateY(-150%)!important;
+  transition:all 0.5s !important;
+}
+
+
+.card2.move.open{
+transform-origin: center center !important;
+-ms-transform-origin: center center !important;
+-webikit-transform-origin: center center !important;
+-moz-transform-origin: center center !important;
+-webkit-transform: rotateY(180deg) !important;
+transform:  translateY(-150%) rotateY( 180deg ) !important;
+ transition:all 0.5s !important;
+ /*background-image:url('../images/10.jpg');*/
+}
+
+.modal-content{
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: auto;
+}
+
+button{
+	cursor: pointer;
+}
